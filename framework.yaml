@@ -1,0 +1,18 @@
+apiVersion: concord.dev/v1
+kind: Framework
+metadata:
+  id: fedramp
+  name: FedRAMP Moderate
+  version: v0.1.0
+  description: "FedRAMP Moderate Baseline (NIST 800-53 Rev 5 + FedRAMP overlays)."
+  authors: ["concord-dev"]
+  attribution:
+    sources:
+      - usnistgov-oscal-content-fedramp
+      - gsa-fedramp-baselines
+
+spec:
+  control_packs:
+    - source: ghcr.io/concord-dev/concord-controlpack-fedramp
+      version: ">=v0.1.0,<v1.0.0"
+      reason: "FedRAMP Moderate baseline controls drawn from NIST OSCAL"
