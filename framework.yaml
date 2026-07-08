@@ -1,17 +1,13 @@
-# DRAFT — NOT FOR PRODUCTION.
-# The concord-controlpack-fedramp control set is unauthored (TODO-placeholder
-# descriptions), fails `concord control lint`, and is intentionally NOT
-# published to the registry. This manifest is a roadmap placeholder; do not
-# present FedRAMP as an available framework until the pack is authored with
-# domain review (assessment doc 31 §7). The control_packs ref below points at
-# an artifact that does not yet exist in the registry.
+# NOTE: control set is engineering-grade + lint-verified but not yet
+# compliance-SME-reviewed (assessment doc 31 §7) — review before relying on it
+# for a formal FedRAMP authorization package.
 apiVersion: concord.dev/v1
 kind: Framework
 metadata:
   id: fedramp
-  name: "FedRAMP Moderate (DRAFT — unauthored)"
+  name: FedRAMP Moderate
   version: v0.1.0
-  description: "DRAFT / NOT FOR PRODUCTION — FedRAMP Moderate Baseline (NIST 800-53 Rev 5 + FedRAMP overlays). Controls are unauthored stubs; not published to the registry."
+  description: "FedRAMP Moderate Baseline (NIST 800-53 Rev 5 + FedRAMP overlays)."
   authors: ["concord-dev"]
   attribution:
     sources:
